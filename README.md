@@ -1,10 +1,11 @@
-wpython.py
-==========
                           __   __
     .--.--.--.-----.--.--|  |_|  |--.-----.-----.
     |  |  |  |  _  |  |  |   _|     |  _  |     |
     |________|   __|___  |____|__|__|_____|__|__|
              |__|  |_____|
+
+wpython.py
+==========
 
 With wpython you can launch scripts residing in virtual environments
 without the need of activating the venv.
