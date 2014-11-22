@@ -97,4 +97,4 @@ Author:
 * Laszlo Szathmary, alias Jabba Laci, 2014 (jabba.laci@gmail.com)
 * https://github.com/jabbalaci
 
-ASCII logo made with [http://patorjk.com/software/taag].
+ASCII logo made with http://patorjk.com/software/taag .
