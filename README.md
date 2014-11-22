@@ -26,15 +26,15 @@ wpython reduces it to:
     wpython /path/to/script.py
 
 wpython figures out the path of the Python interpreter in the venv
-and passes /path/to/script.py to this local interpreter.
+and passes `/path/to/script.py` to this local interpreter.
 
 The name **w**python refers to virtualenv**w**rapper. I use it with
 virtualenvwrapper'ed projects but it also works with virtualenv.
 
 Requirements
 ------------
-wpython uses on the excellent unipath library, which provides a sane
-way to work with files and directories.
+wpython uses the excellent [unipath](https://github.com/mikeorr/Unipath) library,
+which provides a sane way to work with files and directories.
 It comes bundled with wpython but you can also install it system-wide.
 
 Tested with
@@ -46,12 +46,13 @@ Usage
 1) Put `wpython.py` somewhere in your PATH.
    Tip: I put two symbolic links on it: `wpython` and `wpy`.
 
-2) In the root of your venv'ed project directory create a file called ".venv".
+2) In the root of your venv'ed project directory create a file called "`.venv`".
    The content of this file should be the path of the directory
    where the virtual env. is created by the commands virtualenv or
    virtualenvwrapper.
+
    This path can be either absolute or relative.
-   You can also rename ".venv", see the VENV_FILE constant in the source below.
+   You can also rename "`.venv`", see the `VENV_FILE` constant in the source.
 
 virtualenvwrapper example
 -------------------------
@@ -75,7 +76,7 @@ Notice that we didn't have to activate the virtual environment.
 virtualenv example
 ------------------
 Say you put your virtual environment in the root of the project folder
-under a subdirectory called "venv". In this case the content of the ".venv"
+under a subdirectory called "`venv`". In this case the content of the "`.venv`"
 file can be a relative path:
 
     $ cat .venv
@@ -86,7 +87,7 @@ You launch a script the same way as explained for virtualenvwrapper.
 Extra feature
 -------------
 With wpython you can also launch scripts that are not in the project's
-root folder but deep in a subfolder. You still need just one ".venv" file
+root folder but deep in a subfolder. You still need just one "`.venv`" file
 in the project's root. If wpython doesn't find the file `.venv` in the folder
 of the script to be launched, it will start stepping back to the parent
 folders. It will use the first `.venv` file it finds.
@@ -96,4 +97,4 @@ Author:
 * Laszlo Szathmary, alias Jabba Laci, 2014 (jabba.laci@gmail.com)
 * https://github.com/jabbalaci
 
-ASCII logo made with http://patorjk.com/software/taag
+ASCII logo made with [[http://patorjk.com/software/taag]].
